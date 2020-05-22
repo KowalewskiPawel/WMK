@@ -13,7 +13,17 @@
 	<link rel="icon" type="image/png" href="icons/icon-256.png">
 
 <link rel="stylesheet" href="style.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 <body>
 <div id="fb-root"></div>
@@ -29,5 +39,50 @@
 	<script src="scripts/offlineclient.js"></script>
 	<script src="scripts/main.js"></script>
 	<script src="scripts/register-sw.js"></script>
+	<br><br><br>
+	
+		<div class="row">
+		  
+	<button id="left">Left</button></div>
+	<div class="col-sm-3">
+		<div class="col-sm-3">
+			<button id="gas">Gas</button></div>
+			<div class="col-sm-3">
+				<div class="col-sm-3">
+					<button id="break">Break</button></div>
+	<button id="right">Right</button></div>
+	
+	
+	<script>
+	var gasbtn = document.getElementById("gas");
+	input.addEventListener("keyup", function(event) {
+	  if (event.keyCode === 38) {
+	   event.preventDefault();
+	   document.getElementById("gas").click();
+	  }
+	});
+	var leftbtn = document.getElementById("left");
+	leftbtn.addEventListener("keyup", function(event) {
+	  if (event.keyCode === 37) {
+	   event.preventDefault();
+	   document.getElementById("left").click();
+	  }
+	});
+	var rightbtn = document.getElementById("right");
+	rightbtn.addEventListener("keyup", function(event) {
+	  if (event.keyCode === 39) {
+	   event.preventDefault();
+	   document.getElementById("right").click();
+	  }
+	});
+	var breakbtn = document.getElementById("break");
+	breakbtn.addEventListener("keyup", function(event) {
+	  if (event.keyCode === 40) {
+	   event.preventDefault();
+	   document.getElementById("break").click();
+	  }
+	});
+	</script>
+		  </div>
 </body>
 </html>
